@@ -73,7 +73,25 @@ nav {
 .image {
   width: 50%;
   height: 50%;
+  position: relative;
   /* object-fit: fill; */
+}
+.image .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10px 0;
+  
+}
+
+.image .content h1 {
+  font-size: 3em;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: white;
 }
 
 .image > img {
